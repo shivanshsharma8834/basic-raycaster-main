@@ -2,3 +2,5 @@
 # Ignore python cache directory
 __pycache__/ 
 
+# todolist 
+todolist.md
