@@ -3,7 +3,7 @@ import pygame as pg
 _ = False 
 
 mini_map = [
-   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 1],
     [1, _, _, 3, 3, 3, 3, _, _, _, 2, 2, 2, _, _, 1],
     [1, _, _, _, _, _, 4, _, _, _, _, _, 2, _, _, 1],
@@ -28,7 +28,7 @@ class Map:
                 if value:
                     self.world_map[(i,j)] = value
 
-    def draw(self):
+    def draw(self): # Debug purposes only
         
         for pos in self.world_map:
 

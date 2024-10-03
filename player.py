@@ -51,7 +51,7 @@ class Player:
 
 
 
-    def draw(self):
+    def draw(self): # This is for debug purposes only
         pg.draw.line(self.game.screen, 'yellow', (self.x * 100, self.y * 100),
                      (self.x * 100 + WIDTH * math.cos(self.angle),
                       self.y * 100 + WIDTH * math.sin(self.angle)), 3)

@@ -11,7 +11,7 @@ class RayCasting:
         ox, oy = self.game.player.pos
         x_map,y_map = self.game.player.map_pos
     
-        ray_angle = self.game.player.angle - HALF_FOV + 0.0001 # A magic number, fucking magic
+        ray_angle = self.game.player.angle - HALF_FOV + 0.0001 # Adding 0.0001 so to prevent ray_angle from every becoming zero
         for ray in range(NUM_RAYS):
             sin_a = math.sin(ray_angle)
             cos_a = math.cos(ray_angle)
